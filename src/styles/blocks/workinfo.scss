@@ -9,7 +9,7 @@
   font-weight: 400;
   font-size: 14px;
 
-  transition: all 1s;
+  transition: all 0.3s;
 
   @include media (tablet, desktop, desktopWide) {
     grid-template-columns: repeat(2, 180px);

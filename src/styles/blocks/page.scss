@@ -16,10 +16,14 @@
     
     transform: translateY(-100%);
 
-    transition: all 1s;
+    transition: all 0.3s;
 
     &:target {
       transform: translateY(0);
+    }
+
+    @include media (desktop, desktopWide) {
+      position: absolute;
     }
   }
 }

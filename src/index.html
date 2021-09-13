@@ -21,83 +21,112 @@
   </head>
 
   <body class="page__body">
-    <header class="header header--main-page">
-      <div class="container">
-        <div class="top-bar">
-          <a href="#menu" class="top-bar__menu-icon">
-          </a>
-          <a href="#" class="logo">
-            <div class="logo__name">
-              NA
-              <br>
-              MU
-            </div>
-          </a>
-          <img src="./images/search.svg" alt="search">
+    <header class="header">
+
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar__container">
+            <a href="#menu" class="top-bar__menu-icon">
+            </a>
+            <a href="#" class="logo">
+              <div class="logo__name">
+                NA
+                <br>
+                MU
+              </div>
+            </a>
+            <img
+            src="./images/search.svg"
+            alt="search"
+            class="top-bar__search"
+            >
+          </div>
         </div>
       </div>
 
-      <nav
-        class="page__menu menu"
-        id="menu"
-      >
+      <nav class="page__menu menu" id="menu">
         <div class="container">
-          <a href="#" class="logo">
-            <div class="logo__name">
-              NA
-              <br>
-              MU
-            </div>
-          </a>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#gallery" class="menu__link">Галерея</a>
-            </li>
-            <li class="menu__item">
-              <a href="#exhandevents" class="menu__link">Виставки та події</a>
-            </li>
-            <li class="menu__item">
-              <a href="#visiting" class="menu__link">Відвідування</a>
-            </li>
-            <li class="menu__item">
-              <a href="#bacomefriend" class="menu__link">Стати нашим другом</a>
-            </li>
-            <li class="menu__item">
-              <a href="#about-us" class="menu__link">Про Нас</a>
-            </li>
-            <li class="menu__item">
-              <a href="#shop" class="menu__link">Магазин</a>
-            </li>
-            <li class="menu__item">
-              <a href="#blog" class="menu__link">Блог</a>
-            </li>
-            <li class="menu__item">
-              <a href="#contacts" class="menu__link">Контакти</a>
-            </li>
-          </ul>
+          <div class="menu__container">
+            <a href="#" class="logo">
+              <div class="logo__name">
+                NA
+                <br>
+                MU
+              </div>
+            </a>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#gallery" class="menu__link">
+                  Галерея
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#exhandevents" class="menu__link">
+                  Виставки та події
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#visiting" class="menu__link">
+                  Відвідування
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#becomefriend" class="menu__link">
+                  Стати нашим другом
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#about-us" class="menu__link">
+                  Про Нас
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#shop" class="menu__link">
+                  Магазин
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#blog" class="menu__link">
+                  Блог
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link">
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-
-      <div class="header__section top-section">
-        <div class="header__title top-section__title">
-          Художній
-          <br>
-          музей
-        </div>
-        <a href="#" class="header__tickets top-section__button ticket-button">
-          <div class="ticket-button__name">
-            КВИТКИ
-          </div>
-          <div class="ticket-button__arrow">
-            &#62;
-          </div>
-        </a>
-      </div>
-
     </header>
 
     <main class="main">
-      <section class="main__section events" id="exhandevents">
+
+      <div class="main__top-section top-section">
+        <div class="top-section__container">
+          <div class="top-section__left-block">
+            <h1 class="top-section__title">
+              Худож<span class="top-section__title--span">ній</span>
+              <br>
+              музей
+            </h1>
+            <a href="#" class="top-section__ticket-button ticket-button">
+              <div class="ticket-button__name">
+                КВИТКИ
+              </div>
+              <div class="ticket-button__arrow">
+                &#62;
+              </div>
+            </a>
+          </div>
+          <div class="top-section__right-block">
+          </div>
+        </div>
+
+      </div>
+
+      <section class="main__events events" id="exhandevents">
         <div class="container">
           <h2 class="main__section-title">
             Актуальні події
@@ -284,7 +313,7 @@
         </div>
       </div>
 
-      <section class="main__section subscription">
+      <section class="main__subscription subscription">
         <div class="container">
           <h2 class="main__section-title main__section-title--subscription">
             Підписка
@@ -325,7 +354,7 @@
                 MU
               </div>
             </a>
-            <div class="sm-bar__networks">
+            <div class="sm-bar__networks" id="becomefriend">
               <a
                 href="https://www.facebook.com/namu.museum/"
                 class="sm-bar__link"
@@ -451,28 +480,44 @@
           <div class="footer__sitemap sitemap">
             <ul class="sitemap__list">
               <li class="sitemap__item">
-                <a href="#gallery" class="sitemap__link">Галерея</a>
+                <a href="#gallery" class="sitemap__link">
+                  Галерея
+                </a>
               </li>
               <li class="sitemap__item">
-                <a href="#exhandevents" class="sitemap__link">Виставки та події</a>
+                <a href="#exhandevents" class="sitemap__link">
+                  Виставки та події
+                </a>
               </li>
               <li class="sitemap__item">
-                <a href="#visiting" class="sitemap__link">Відвідування</a>
+                <a href="#visiting" class="sitemap__link">
+                  Відвідування
+                </a>
               </li>
               <li class="sitemap__item">
-                <a href="#becomefriend" class="sitemap__link">Стати нашим другом</a>
+                <a href="#becomefriend" class="sitemap__link">
+                  Стати нашим другом
+                </a>
               </li>
               <li class="sitemap__item">
-                <a href="#about-us" class="sitemap__link">Про Нас</a>
+                <a href="#about-us" class="sitemap__link">
+                  Про Нас
+                </a>
               </li>
               <li class="sitemap__item">
-                <a href="#shop" class="sitemap__link">Магазин</a>
+                <a href="#shop" class="sitemap__link">
+                  Магазин
+                </a>
               </li>
               <li class="sitemap__item">
-                <a href="#blog" class="sitemap__link">Блог</a>
+                <a href="#blog" class="sitemap__link">
+                  Блог
+                </a>
               </li>
               <li class="sitemap__item">
-                <a href="#contacts" class="sitemap__link">Контакти</a>
+                <a href="#contacts" class="sitemap__link">
+                  Контакти
+                </a>
               </li>
             </ul>
           </div>

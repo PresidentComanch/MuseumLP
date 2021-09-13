@@ -40,6 +40,12 @@
 
     display: none;
 
+    transition: border-radius 0.3s;
+
+    &:hover {
+      border-radius: 5px;
+    }
+
     @include media(desktop, desktopWide) {
       display: block;
     }
@@ -48,18 +54,22 @@
       grid-area: one;
       overflow: hidden;
     }
+
     &--2 {
       grid-area: two;
       overflow: hidden;
     }
+
     &--3 {
       grid-area: three;
       overflow: hidden;
     }
+
     &--4 {
       grid-area: four;
       overflow: hidden;
     }
+
     &--5 {
       grid-area: five;
       display: none;
@@ -69,7 +79,7 @@
         display: block;
       }
     }
-    
+
     &--6 {
       grid-area: six;
       display: none;
@@ -87,6 +97,12 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   /* mobile gallery */

@@ -1,4 +1,5 @@
 .main {
+
   &__section-title {
     margin: 0 0 40px;
     padding: 0;
@@ -23,9 +24,9 @@
   
     &--subscription {
       margin-bottom: 30px;
-      
-      color: #fff;
+
       text-align: center;
+      color: #fff;
 
       @include media(tablet, desktop, desktopWide) {
         margin-bottom: 20px;
@@ -33,11 +34,19 @@
     }
   }
 
+  &__events {
+    margin: 0 0 90px;
+  }
+
   &__lecture {
     margin-bottom: 197px;
   }
 
   &__gallery {
-    margin-bottom: 139px;
+    margin: 0 0 130px;
+
+    @include media (desktop, desktopWide) {
+      margin: 0 0 200px;
+    }
   }
 }

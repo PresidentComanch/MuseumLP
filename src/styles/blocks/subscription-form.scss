@@ -59,6 +59,8 @@
 
     cursor: pointer;
 
+    transition: all 0.3s;
+
     @include media(tablet, desktop, desktopWide) {
       width: 70px;
     }
@@ -69,6 +71,8 @@
 
     &:active {
       background-color: #e96969;
+
+      transform: translateY(2px);
     }
   }
 }

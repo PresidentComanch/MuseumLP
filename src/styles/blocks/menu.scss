@@ -1,29 +1,37 @@
 .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  height: 100vh;
-
-  padding: 15px 20px;
-
-  box-sizing: border-box;
+  width: 100%;
   background-color: #fff;
 
-  @include media (desktop, desktopWide) {
-    flex-direction: row;
-    align-items: flex-end;
-    height: 90px;
-    padding: 0 14px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: 100vh;
+
+    padding: 9px 0;
+
+    box-sizing: border-box;
+
+    @include media (desktop, desktopWide) {
+      flex-direction: row;
+      align-items: flex-end;
+      height: 90px;
+    }
+    
+    & > :first-child {
+      margin-right: 37px;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
 
     width: 100%;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 
@@ -37,7 +45,9 @@
   }
 
   &__item {
+    position: relative;
     display: block;
+    width: max-content;
   }
 
   &__link {
@@ -48,8 +58,25 @@
     color: $colorMarshland;
     text-decoration: none;
 
+    transition: all 0.3s;
+
     &:hover {
+      color: $colorGreyLight;
       text-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+
+      &::after {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+
+        content: "";
+
+        height: 4px;
+
+        background-color: $colorGreenPea;
+        opacity: 0.5;
+      }
     }
   }
 }

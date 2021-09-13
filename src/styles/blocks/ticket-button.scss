@@ -17,11 +17,19 @@
   line-height: 100%;
   color: $colorMarshland;
 
+  transition: all 0.3s;
+
+  @include media (tablet, desktop, desktopWide) {
+    width: 220px;
+    height: 70px;
+  }
+
   &:hover {
     box-shadow: rgba(26,90,74, 0.35) 0 5px 15;
   }
 
   &:active {
+    transform: translateY(2px);
     box-shadow: rgba(26,90,74, 0.55) 0 2px 8;
   }
 
@@ -30,8 +38,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    flex-basis: 220px;
     flex-grow: 1;
 
     background-color: #fff;
@@ -50,5 +56,15 @@
     background-color: $colorGreenPea;
 
     color: #fff;
+
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: rgba(26,90,74, 0.55);
+    }
+
+    @include media (tablet, desktop, desktopWide) {
+      width: 70px;
+    }
   }
 }
